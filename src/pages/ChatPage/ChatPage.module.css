@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #000000 70%, #003300 85%, #006600);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #00ff41;
+  text-shadow: 0 0 10px rgba(0, 255, 100, 0.7);
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+	color: #00ff41;
+	text-shadow: 0 0 10px rgba(0, 255, 100, 0.7);
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.chatWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.chatContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chatBox {
+  max-width: 500px;
+  background: rgba(0, 50, 20, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 255, 100, 0.2);
+  border: 1px solid rgba(0, 255, 100, 0.3);
+	height: 200px;
+  max-height: 200px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.chatBox::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatBox::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 100, 0.7);
+  border-radius: 4px;
+}
+
+.chatBox::-webkit-scrollbar-track {
+  background: rgba(0, 255, 100, 0.2);
+}
+
+.typing {
+  font-style: italic;
+  color: rgba(0, 255, 100, 0.7);
+}
+
+.inputField {
+  width: 100%;
+	box-sizing: border-box;
+	max-width: 300px;
+  padding: 10px;
+  background: rgba(0, 40, 15, 0.7);
+  border: 1px solid rgba(0, 255, 100, 0.5);
+  border-radius: 5px;
+  font-size: 16px;
+  color: #00ff41;
+  outline: none;
+  margin-top: 20px;
+}
+
+.inputField::placeholder {
+  color: rgba(0, 255, 100, 0.5);
+}
+
+.sendButton {
+  background: rgba(0, 255, 100, 0.2);
+  color: #00ff41;
+  padding: 10px;
+  border: 1px solid rgba(0, 255, 100, 0.5);
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0, 255, 100, 0.3);
+  margin-top: 10px;
+}
+
+.sendButton:hover {
+  background: rgba(0, 255, 100, 0.5);
+  box-shadow: 0 0 20px rgba(0, 255, 100, 0.6);
+}
+
+.usersBox {
+  width: 200px;
+  /* background: rgba(0, 255, 100, 0.1); */
+	box-shadow: 0 4px 15px rgba(0, 255, 100, 0.2);
+  border: 1px solid rgba(0, 255, 100, 0.3);
+	border-radius: 10px;
+}
+
+.usersList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.usersList li {
+	background: rgba(0, 255, 100, 0.1);
+  border-radius: 10px;
+  padding: 12px;
+	width: max-content;
+	margin-top: 10px;
+}
+
+.typingBox {
+	margin-top: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.typingText {
+  font-style: italic;
+  color: rgba(0, 255, 100, 0.7);
+  text-shadow: 0 0 8px rgba(0, 255, 100, 0.5);
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+
